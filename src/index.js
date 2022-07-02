@@ -1,17 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  <div>
+    <HelloWorld name='Sereja' lang = 'en'/>
+    <HelloWorld name='Сережа' lang = 'ru'/>
+  </div>
+)
+function HelloWorld(props) {
+  
+  let [username, setUsername] = useState(props.name)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  if (props.lang === 'ru') {
+      return (
+        <div>
+          Привет {props.name}
+        </div>
+      )
+  }
+  if (props.lang === 'en') {
+      return (
+        <div>
+          Hello {props.name}
+        </div>
+      )
+  }
+
+  
+
+  // return (
+  //   <div>
+  //     <div>Hello {username} </div>
+
+  //   </div>
+  // )
+}

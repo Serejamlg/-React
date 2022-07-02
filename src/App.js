@@ -2,29 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import Fcompanent from './Fcompanent';
 import Ccomponent from './Ccomponent'; 
-import Arcomponent from './Arcomponent';
+// import Arcomponent from './Arcomponent';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <Ccomponent /> 
-      <Fcompanent name="My friend"/>
-      
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          
-        </a>
-      </header>
-    </div>
+      <Ccomponent />
   );
 }
+
 
 export default App;

@@ -1,13 +1,14 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import Fcompanent from './Fcompanent';
-import Ccomponent from './Ccomponent'; 
-// import Arcomponent from './Arcomponent';
+import FCompanent from './FCompanent';
 function App() {
   return (
-      <Ccomponent />
+    <div className="App">
+        <FCompanent />
+    </div>
+
   );
 }
 
-
 export default App;
+

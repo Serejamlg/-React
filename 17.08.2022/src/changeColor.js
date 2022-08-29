@@ -4,7 +4,9 @@ function changeColor(string, oldColor, newColor, withCase) {
         const str = string.split(" ");
         for (let i = 0; i < str.length; i++) {
             if (withCase === true) {
-                
+                if (str[i].toLowerCase() === oldColor.toLowerCase()) {
+                    str[i] = newColor
+                }
             } else {
                 if (str[i] === oldColor) {
                     str[i] = newColor

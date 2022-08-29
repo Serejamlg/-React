@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+    header {
+
+        margin: 0;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        width: 100%;
+        height: 50px;
+        background-color: rgb(136, 155, 173);
+        font-size: 30px;
+    }
+       a {
+        margin: 15px;
+        text-decoration: none;
+       } 
+       a:hover {
+        color: white;
+       }
+
+       td {
+        border: solid 1px black;
+        padding: 50px;
+       }
+       .mine {
+        background-color: antiquewhite;
+        font-size: 20px;
+       }
+</style>
+<body>
+    <header>
+        <div><a href="film.html">Фильмы </a></div>
+        <div><a href="Users.html">Пользователи </a></div>
+        <div><a href="site.html">О сайте</a></div>        
+    </header>
+    
+    <div class="tablica ">
+        <table>
+            <tr>
+                <td class=" mine name">Название</td>
+                <td class="mine yesrs">Год</td>
+                <td class="mine countre">Страна</td>
+                <td class="mine janr">Жанр</td>
+                <td class="mine rankid">Рейтинг</td>
+            </tr>
+            <tr>
+                <td>Мстители</td>
+                <td>2018</td>
+                <td>США</td>
+                <td>экшен</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>Тор любовь и гром</td>
+                <td>2022</td>
+                <td>США</td>
+                <td>экшен</td>
+                <td>4.2</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        название:<input type="text" value="">
+        год:<input type="number" value="">
+        Страна:<select name="select">
+            <option value="value1"></option>
+            <option value="value1">Россия</option>
+            <option value="value2">США</option>
+            <option value="value3">Индия</option>
+          </select>
+        жанр:<select name="select">
+            <option value="value1"></option>
+            <option value="value1">Экшен</option>
+            <option value="value2">Боевик</option>
+            <option value="value3">Драма</option>
+            <option value="value3">Комедия</option>
+            <option value="value3">Мультфильм</option>
+          </select>
+        рейтинг:<input type="number" value="">
+        
+        <button class="addFilms">ДОБАВИТЬ</button>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
